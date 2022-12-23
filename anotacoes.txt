@@ -1,0 +1,22 @@
+conda create --name myEnv django -> cria um environment que usamos para testes
+activate myEnv
+deactivate myEnv
+usar virtual environments é muito importante por conta da incompatibilidade de versões que podem acontecer
+conda info --envs (mostra todos enviroments)
+django-admin startproject myfirst_project   -> fazer isso dentro do ambiente virtual -> já cria o projeto todo com vários arquivos
+
+o __init__.py fica vazio e só serve pra mostrar que é um package, o settings fica com todas configurações, o de url trabalha com todas urls e o wsgi 
+o web server gateway, pro deployment e o manage.py é o mais usado
+
+python manage.py runserver -> pra rodar o servidor -> pega a URL e copia e cola no browser
+
+python manage.py startapp first_app -> cria a aplicação, que pode ser plugada em outras páginas com Django
+dentro de settings precisa adicionar esse first_app
+
+criando o DJango assim: django-admin startproject setup .  não cria aquela outra pasta, fica mais conciso
+
+instalei o python-dotenv que é um gerenciador para mandar arquivos pro github e não ter problema com informações confidenciais, tipo a secret key
+
+gitignore.io -> mostra o que não devemos subir pro github
+
+
